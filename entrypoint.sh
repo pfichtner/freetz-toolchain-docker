@@ -1,7 +1,5 @@
 #!/bin/bash -e
 
-[ "${COMMAND_NOT_FOUND_AUTOINSTALL}" = 'n' ] && unset COMMAND_NOT_FOUND_AUTOINSTALL || export COMMAND_NOT_FOUND_AUTOINSTALL=y
-
 umask 0022
 
 WS_OWNER=`stat -c "%u" /workspace`
